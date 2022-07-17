@@ -41,7 +41,11 @@ class _ImcStatePageState extends State<ImcStatePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       appBar: AppBar(
+        
+        backgroundColor: Colors.teal,
+      
         title: const Text('IMC Setstate'),
       ),
       body: SingleChildScrollView(
@@ -51,6 +55,9 @@ class _ImcStatePageState extends State<ImcStatePage> {
           padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
+              SizedBox(
+                height: 20,
+              ),
               ImcGauge(imc: imc),
               SizedBox(
                 height: 20,
@@ -85,7 +92,7 @@ class _ImcStatePageState extends State<ImcStatePage> {
                 ],
                 validator: (String? value) {
                   if (value == null || value.isEmpty) {
-                    return 'altura Obrigatório';
+                    return 'Altura Obrigatório';
                   }
                 },
                 keyboardType: TextInputType.number,
