@@ -1,9 +1,7 @@
-import 'dart:ffi';
+
 
 import 'package:flutter/material.dart';
 import 'package:imc/Widgts/imc_gauge.dart';
-import 'package:imc/Widgts/img_gauge_range.dart';
-import 'package:syncfusion_flutter_gauges/gauges.dart';
 import 'package:currency_text_input_formatter/currency_text_input_formatter.dart';
 
 class ImcStatePage extends StatefulWidget {
